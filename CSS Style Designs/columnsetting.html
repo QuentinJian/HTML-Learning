@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>column test</title>
+    <style>
+        div {
+            line-height: 1.5em;
+            columns: 3 150px;
+            column-gap: 1.5em;
+            column-rule-style: solid;
+        }
+        h1 { background-color: aqua; color: blue; }
+        h1#ex { 
+            column-span: all; 
+            text-align: center;
+        }
+        p { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="ex">Silicone Stone Education</h1>
+        <p>International Education Suite</p>
+        <section>
+            <h1>Big Data Knowledge</h1>
+            <p>Big Data it's big!Big Data it's bigBig Data it's bigBig Data it's bigBig Data it's bigBig Data it's big
+                Big Data it's bigBig Data it's bigBig Data it's bigBig Data it's bigBig Data it's bigBig Data it's big
+                Big Data it's bigBig Data it's bigBig Data it's bigBig Data it's bigBig Data it's bigBig Data it's big</p>
+        </section>
+    </div>
+</body>
+</html>
