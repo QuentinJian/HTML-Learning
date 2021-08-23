@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Print Size</title>
+</head>
+<body>
+    <p>輸出視窗高度與寬度</p>
+    <p id="ex1"></p>
+    <p id="ex2"></p>
+    <script>
+        var winHeight = window.innerHeight;
+        var winWidth = window.innerWidth;
+        var outHeight = window.outerHeight;
+        var outWidth = window.outerWidth;
+        document.getElementById("ex1").innerHTML = "瀏覽區height = " + winHeight + ", 瀏覽區width = " + winWidth;
+        document.getElementById("ex2").innerHTML = "總視窗height = " + outHeight + ", 總視窗width = " + outWidth; 
+    </script>
+</body>
+</html>

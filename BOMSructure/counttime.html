@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Timer</title>
+    <script>
+        var idTime;
+        function stopTime(){
+            var intBoolean = confirm("是否繼續計時？");
+            if (intBoolean == false){
+                status = "計時結束";
+                clearTimeout(idTime);
+            }else{
+                counterTime();
+            }
+        }
+        function counterTime(){
+            status = "計時中 . . .";
+            idTime = setTimeout(stopTime, 3000);
+        }
+    </script>
+</head>
+<body>
+    <p>Windows Timer</p>
+    <form>
+        <input type="button" onclick="counterTime()" value="Timer">
+    </form>
+</body>
+</html>
