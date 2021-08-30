@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>Get Info</title>
+     </head>
+     <body>
+         <h1>Get broswer info</h1>
+         <p id="ex"></p>
+         <script>
+             var bInfo = "";
+             bInfo += "<p> Browser appCodeName: " + navigator.appCodeName + "</p>";
+             bInfo += "<p> Browser appName: " + navigator.appName + "</p>";
+             bInfo += "<p> Browser appVersion: " + navigator.appVersion + "</p>";
+             bInfo += "<p> Browser Cookie Enabled: " + navigator.cookieEnabled + "</p>";
+             bInfo += "<p> Browser cpuClass: " + navigator.cpuClass + "</p>";
+             bInfo += "<p> Browser onLine: " + navigator.onLine + "</p>"; 
+             bInfo += "<p> User Language: " + navigator.language + "</p>";
+             bInfo += "<p> HTTP request userAgent: " + navigator.userAgent + "</p>";
+             document.getElementById("ex").innerHTML += bInfo; 
+         </script>
+     </body>
+ </html>

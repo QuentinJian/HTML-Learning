@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Control Window</title>
+    </head>
+    <body>
+        <p>Open new window</p>
+        <button onclick="openWin()">Open Window</button>
+        <button onclick="closeWin()">Close Window</button>
+        <script>
+            var myfirstWin;
+            function openWin() {
+                myfirstWin = window.open("", "width=300, height=150");
+            }
+            function closeWin() {
+                myfirstWin.close();
+            }
+        </script>
+    </body>
+</html>

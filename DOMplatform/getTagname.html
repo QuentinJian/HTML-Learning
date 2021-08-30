@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Get Tag</title>
+</head>
+<body>
+<p>DOM 觀念應用</p>
+<p>Use getElementByTagName function get element</p>
+<p>HTML5+CSS3+JavaScript</p>
+<p id="ex0"></p>
+<p id="ex1"></p>
+<p id="ex2"></p>
+<script>
+    var exInfo = document.getElementsByTagName("p");
+    document.getElementById("ex0").innerHTML = "p(0) = " + exInfo[0].innerHTML;
+    document.getElementById("ex1").innerHTML = "p(1) = " + exInfo[1].innerHTML;
+    document.getElementById("ex2").innerHTML = "p(2) = " + exInfo[2].innerHTML;
+</script>
+</body>
+</html>
